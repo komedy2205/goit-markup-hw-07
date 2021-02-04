@@ -1,0 +1,89 @@
+footer {
+  background-color: $hero-backgroundcolor;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-all {
+  display: flex;
+  align-items: baseline;
+
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-footer {
+  width: 231px;
+  margin-right: 70px;
+}
+
+.web-footer {
+  color: $sec-backgroundcolor;
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo-footer {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+}
+
+.studio-logo-footer {
+  color: $sec-text-color;
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+}
+
+.address {
+  padding-bottom: 0;
+  margin-bottom: 9px;
+
+  color: $sec-text-color;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.mail-footer {
+  padding-top: 0px;
+  padding-bottom: 0;
+  margin-bottom: 9px;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.telephone-footer {
+  padding-top: 0px;
+  padding-bottom: 0;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mail-footer,
+.telephone-footer {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.mail-footer:hover,
+.mail-footer:focus {
+  color: $sec-backgroundcolor;
+}
+
+.telephone-footer:hover,
+.telephone-footer:focus {
+  color: $sec-backgroundcolor;
+}

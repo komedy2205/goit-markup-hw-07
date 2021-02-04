@@ -1,0 +1,217 @@
+.name-section {
+  position: relative;
+}
+
+.modal-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+
+  letter-spacing: 0.01em;
+
+  color: $descrip-text-color;
+}
+
+.name-form {
+  display: block;
+  width: 448px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+
+  margin-top: 4px;
+  margin-bottom: 10px;
+
+  padding-left: 40px;
+}
+
+.name-form:focus,
+.name-form:hover {
+  outline: none;
+  border: 1px solid $sec-backgroundcolor;
+  cursor: pointer;
+}
+
+.name-form-img {
+  position: absolute;
+  fill: $main-text-color;
+
+  top: 50%;
+  transform: translateY(50%);
+  left: 12px;
+}
+
+.name-form:focus + .name-form-img,
+.name-form:hover + .name-form-img {
+  fill: $sec-backgroundcolor;
+}
+
+.telephone-form {
+  display: block;
+  width: 448px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+
+  margin-top: 4px;
+  margin-bottom: 10px;
+
+  padding-left: 40px;
+}
+
+.telephone-form:focus,
+.telephone-form:hover {
+  outline: none;
+  border: 1px solid $sec-backgroundcolor;
+  cursor: pointer;
+}
+
+.telephone-form:focus + .name-form-img,
+.telephone-form:hover + .name-form-img {
+  fill: $sec-backgroundcolor;
+}
+
+.email-form {
+  display: block;
+  width: 448px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+
+  margin-top: 4px;
+  margin-bottom: 10px;
+
+  padding-left: 40px;
+}
+
+.email-form:focus,
+.email-form:hover {
+  outline: none;
+  border: 1px solid $sec-backgroundcolor;
+  cursor: pointer;
+}
+
+.email-form:focus + .name-form-img,
+.email-form:hover + .name-form-img {
+  fill: $sec-backgroundcolor;
+}
+
+.comment-form {
+  display: block;
+  width: 448px;
+  height: 120px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+
+  margin-top: 4px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+
+  padding-left: 16px;
+  padding-top: 12px;
+
+  resize: none;
+}
+
+.comment-form:focus,
+.comment-form:hover {
+  outline: none;
+  border: 1px solid $sec-backgroundcolor;
+  cursor: text;
+}
+
+.comment-form:focus + .name-form-img,
+.comment-form:hover + .name-form-img {
+  fill: $sec-backgroundcolor;
+}
+
+.checkbox {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.agree {
+  position: absolute;
+}
+
+.checkbox .text {
+  margin-left: 25px;
+}
+
+.agreement {
+  text-decoration: underline;
+  color: $sec-backgroundcolor;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  margin-left: 3px;
+}
+
+.agree:focus ~ .checkbox-icon,
+.agree:hover ~ .checkbox-icon {
+  fill: $main-backgroundcolor;
+
+  border: 1px solid $sec-backgroundcolor;
+}
+
+.agree:checked ~ .checkbox-icon {
+  fill: $sec-backgroundcolor;
+
+  border: transparent;
+}
+
+.checkbox-icon {
+  position: absolute;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  fill: $main-backgroundcolor;
+
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+
+  border: 1px solid $main-text-color;
+}
+
+.send-button-block {
+  margin-left: 124px;
+  margin-right: 124px;
+}
+
+.send-button {
+  margin-top: 30px;
+
+  width: 200px;
+  height: 50px;
+  align-items: center;
+  border-radius: 4px;
+  border-color: $sec-backgroundcolor;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  background-color: $sec-backgroundcolor;
+}
+
+.send {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  color: $sec-text-color;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}

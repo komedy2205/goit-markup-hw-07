@@ -1,0 +1,141 @@
+.what-doing {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.sec-title {
+  text-align: center;
+  margin-bottom: 50px;
+
+  text-align: center;
+  color: $main-text-color;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.job {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+
+  margin-left: 0px;
+  padding: 0;
+  list-style: none;
+}
+
+.job-kind {
+  border: 1px solid #eeeeee;
+
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.job-kind-overlay {
+  position: relative;
+
+  width: 370px;
+  overflow: hidden;
+}
+
+.img-overlay::before {
+  position: absolute;
+  content: "";
+
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $sec-backgroundcolor;
+  opacity: 0;
+  transform: translateY(100%);
+  transition-property: transform opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text-overlink {
+  position: absolute;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+
+  transform: translateY(100%);
+  transition-property: transform opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  width: 322px;
+  height: 168px;
+  top: 63px;
+  left: 24px;
+  color: $main-backgroundcolor;
+  opacity: 0;
+}
+
+.job-link:focus,
+.job-link:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.job-link:hover .text-overlink,
+.job-link:focus .text-overlink {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.job-link:focus .img-overlay::before,
+.job-link:hover .img-overlay::before {
+  transform: translateY(0);
+  opacity: 0.9;
+}
+
+.job-kind:hover .text-overlink,
+.job-kind:focus .text-overlink {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.job-kind:focus .img-overlay::before,
+.job-kind:hover .img-overlay::before {
+  transform: translateY(0);
+
+  opacity: 0.9;
+}
+
+.job-kind:nth-child(3n) {
+  margin-right: 0;
+}
+
+.job-kind .container > description-item {
+  display: flex;
+}
+
+.last {
+  margin-bottom: 0px;
+}
+
+.our-job {
+  text-align: left;
+  padding: 20px 24px;
+}
+
+.poster-name {
+  color: $main-text-color;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  line-height: 36px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.poster-name-descr {
+  line-height: 30px;
+
+  text-align: left;
+  margin-top: 4px;
+}

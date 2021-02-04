@@ -1,0 +1,126 @@
+.our-description {
+  padding-top: 94px;
+}
+
+.our-description-li {
+  background-color: $main-backgroundcolor;
+  border-radius: 4px;
+}
+
+.our-description-li::before {
+  display: block;
+  content: "";
+  height: 120px;
+
+  margin-bottom: 30px;
+
+  background-color: $team-backgroundcolor;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px 70px;
+}
+
+.antenna::before {
+  background-image: url("../img/SVG/antenna.svg");
+}
+
+.clock::before {
+  background-image: url("../img/SVG/clock.svg");
+}
+
+.diagram::before {
+  background-image: url("../img/SVG/diagram.svg");
+}
+
+.astronaut::before {
+  background-image: url("../img/SVG/astronaut.svg");
+}
+
+.our-description-li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-description p {
+  margin: 0;
+}
+
+.description-item {
+  display: flex;
+  width: 1170px;
+
+  list-style: none;
+}
+
+.third-title {
+  margin-bottom: 10px;
+
+  color: $main-text-color;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $descrip-text-color;
+}
+
+.img {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.img-item {
+  margin: 0 10px;
+  flex-basis: calc(100% / 3 - 30px);
+}
+
+.overlay-img {
+  position: relative;
+}
+
+.overlay-img::before {
+  position: absolute;
+  content: "";
+
+  background-color: $hero-backgroundcolor;
+  opacity: 0.8;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  left: 0;
+}
+
+.overlay {
+  position: absolute;
+
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 25px;
+  left: 86px;
+
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $sec-text-color;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}

@@ -1,0 +1,213 @@
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.webstudio {
+  margin-right: 93px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+  color: $main-text-color;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+}
+
+.web {
+  color: $sec-backgroundcolor;
+}
+
+header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  border-bottom: 1px solid $header-border-bottom;
+}
+
+.container > nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: block;
+  display: flex;
+}
+
+.item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.current::after {
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  background-color: $sec-backgroundcolor;
+  opacity: 1;
+}
+
+.link-studio::after,
+.link-portfolio::after,
+.link-contacts::after {
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 5px;
+  border-bottom: 1px solid $sec-backgroundcolor;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  background-color: $sec-backgroundcolor;
+  opacity: 0;
+
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-studio:hover::after,
+.link-portfolio:hover::after,
+.link-contacts:hover::after {
+  opacity: 1;
+}
+
+.link-studio:focus::after,
+.link-portfolio:focus::after,
+.link-contacts:focus::after {
+  opacity: 1;
+}
+
+.mail-links {
+  margin-left: auto;
+
+  display: block;
+  display: flex;
+}
+
+.link-studio,
+.link-portfolio,
+.link-contacts {
+  position: relative;
+
+  color: $main-text-color;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  padding-bottom: 32px;
+  padding-top: 32px;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-portfolio:focus,
+.link-portfolio:hover {
+  color: $sec-backgroundcolor;
+}
+
+.link-studio:hover,
+.link-studio:focus {
+  color: $sec-backgroundcolor;
+
+  opacity: 1;
+}
+
+.link-contacts:hover,
+.link-contacts:focus {
+  color: $sec-backgroundcolor;
+
+  opacity: 1;
+}
+
+.active {
+  position: relative;
+  color: $sec-backgroundcolor;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  padding-bottom: 32px;
+  padding-top: 32px;
+
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.active:hover,
+.active:focus {
+  color: $sec-backgroundcolor;
+
+  opacity: 1;
+}
+
+.mail {
+  display: flex;
+  align-items: center;
+  color: $descrip-text-color;
+  fill: $sec-backgroundcolor;
+
+  margin-right: 50px;
+
+  padding-bottom: 32px;
+  padding-top: 32px;
+
+  transition-property: color fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mail:hover,
+.mail:focus {
+  color: $sec-backgroundcolor;
+}
+
+.mail-icon {
+  margin-right: 10px;
+
+  align-items: center;
+
+  fill: currentColor;
+}
+
+.telephone {
+  display: flex;
+
+  color: $descrip-text-color;
+  fill: $sec-backgroundcolor;
+
+  padding-bottom: 32px;
+  padding-top: 32px;
+
+  transition-property: color fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.telephone:hover,
+.telephone:focus {
+  color: $sec-backgroundcolor;
+}
