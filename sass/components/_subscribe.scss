@@ -36,16 +36,16 @@
   margin-left: 12px;
 
   background-color: $sec-backgroundcolor;
-}
 
-.subscribe-button__text {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
+  &__text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
 
-  padding-left: 29px;
-  padding-right: 10px;
-  color: $main-backgroundcolor;
+    padding-left: 29px;
+    padding-right: 10px;
+    color: $main-backgroundcolor;
+  }
 }
 
 .icon-send {

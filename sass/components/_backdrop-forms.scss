@@ -23,27 +23,27 @@
   margin-bottom: 10px;
 
   padding-left: 40px;
-}
 
-.name-form:focus,
-.name-form:hover {
-  outline: none;
-  border: 1px solid $sec-backgroundcolor;
-  cursor: pointer;
-}
+  &:focus,
+  &:hover {
+    outline: none;
+    border: 1px solid $sec-backgroundcolor;
+    cursor: pointer;
+  }
 
-.name-form-img {
-  position: absolute;
-  fill: $main-text-color;
+  &-img {
+    position: absolute;
+    fill: $main-text-color;
 
-  top: 50%;
-  transform: translateY(50%);
-  left: 12px;
-}
+    top: 50%;
+    transform: translateY(50%);
+    left: 12px;
+  }
 
-.name-form:focus + .name-form-img,
-.name-form:hover + .name-form-img {
-  fill: $sec-backgroundcolor;
+  &:focus + &-img,
+  &:hover + &-img {
+    fill: $sec-backgroundcolor;
+  }
 }
 
 .telephone-form {
@@ -57,18 +57,17 @@
   margin-bottom: 10px;
 
   padding-left: 40px;
-}
 
-.telephone-form:focus,
-.telephone-form:hover {
-  outline: none;
-  border: 1px solid $sec-backgroundcolor;
-  cursor: pointer;
-}
-
-.telephone-form:focus + .name-form-img,
-.telephone-form:hover + .name-form-img {
-  fill: $sec-backgroundcolor;
+  &:focus,
+  &:hover {
+    outline: none;
+    border: 1px solid $sec-backgroundcolor;
+    cursor: pointer;
+  }
+  &:focus + .name-form-img,
+  &:hover + .name-form-img {
+    fill: $sec-backgroundcolor;
+  }
 }
 
 .email-form {
@@ -82,18 +81,18 @@
   margin-bottom: 10px;
 
   padding-left: 40px;
-}
 
-.email-form:focus,
-.email-form:hover {
-  outline: none;
-  border: 1px solid $sec-backgroundcolor;
-  cursor: pointer;
-}
+  &:focus,
+  &:hover {
+    outline: none;
+    border: 1px solid $sec-backgroundcolor;
+    cursor: pointer;
+  }
 
-.email-form:focus + .name-form-img,
-.email-form:hover + .name-form-img {
-  fill: $sec-backgroundcolor;
+  &:focus + .name-form-img,
+  &:hover + .name-form-img {
+    fill: $sec-backgroundcolor;
+  }
 }
 
 .comment-form {
@@ -114,18 +113,17 @@
   padding-top: 12px;
 
   resize: none;
-}
 
-.comment-form:focus,
-.comment-form:hover {
-  outline: none;
-  border: 1px solid $sec-backgroundcolor;
-  cursor: text;
-}
-
-.comment-form:focus + .name-form-img,
-.comment-form:hover + .name-form-img {
-  fill: $sec-backgroundcolor;
+  &:focus,
+  &:hover {
+    outline: none;
+    border: 1px solid $sec-backgroundcolor;
+    cursor: text;
+  }
+  & + .name-form-img,
+  & + .name-form-img {
+    fill: $sec-backgroundcolor;
+  }
 }
 
 .checkbox {
@@ -137,14 +135,14 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+
+  & .text {
+    margin-left: 25px;
+  }
 }
 
 .agree {
   position: absolute;
-}
-
-.checkbox .text {
-  margin-left: 25px;
 }
 
 .agreement {
@@ -185,11 +183,6 @@
   border: 1px solid $main-text-color;
 }
 
-.send-button-block {
-  margin-left: 124px;
-  margin-right: 124px;
-}
-
 .send-button {
   margin-top: 30px;
 
@@ -201,6 +194,11 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   background-color: $sec-backgroundcolor;
+
+  &-block {
+    margin-left: 124px;
+    margin-right: 124px;
+  }
 }
 
 .send {

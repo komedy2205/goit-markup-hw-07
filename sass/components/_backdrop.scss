@@ -15,10 +15,10 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.icon-close:hover {
-  fill: $sec-backgroundcolor;
+  &:hover {
+    fill: $sec-backgroundcolor;
+  }
 }
 
 .backdrop {
@@ -45,24 +45,24 @@
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
   background-color: $main-backgroundcolor;
-}
 
-.modal-window {
-  margin-left: 40px;
+  &-window {
+    margin-left: 40px;
 
-  color: $descrip-text-color;
-}
+    color: $descrip-text-color;
+  }
 
-.modal-title {
-  margin-bottom: 12px;
-  margin-left: 40px;
+  &-title {
+    margin-bottom: 12px;
+    margin-left: 40px;
 
-  width: 448px;
-  height: 23px;
+    width: 448px;
+    height: 23px;
 
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.03em;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
 }

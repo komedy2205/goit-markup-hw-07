@@ -29,13 +29,13 @@
 
   margin-right: 30px;
   margin-bottom: 30px;
-}
 
-.job-kind-overlay {
-  position: relative;
+  &-overlay {
+    position: relative;
 
-  width: 370px;
-  overflow: hidden;
+    width: 370px;
+    overflow: hidden;
+  }
 }
 
 .img-overlay::before {
@@ -110,7 +110,7 @@
   margin-right: 0;
 }
 
-.job-kind .container > description-item {
+.job-kind .container > .description-item {
   display: flex;
 }
 
@@ -131,11 +131,11 @@
   line-height: 36px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
 
-.poster-name-descr {
-  line-height: 30px;
+  &-descr {
+    line-height: 30px;
 
-  text-align: left;
-  margin-top: 4px;
+    text-align: left;
+    margin-top: 4px;
+  }
 }

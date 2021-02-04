@@ -1,23 +1,31 @@
 .our-description {
   padding-top: 94px;
-}
 
-.our-description-li {
-  background-color: $main-backgroundcolor;
-  border-radius: 4px;
-}
+  & p {
+    margin: 0;
+  }
 
-.our-description-li::before {
-  display: block;
-  content: "";
-  height: 120px;
+  &-li {
+    background-color: $main-backgroundcolor;
+    border-radius: 4px;
+  }
 
-  margin-bottom: 30px;
+  &-li::before {
+    display: block;
+    content: "";
+    height: 120px;
 
-  background-color: $team-backgroundcolor;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 70px 70px;
+    margin-bottom: 30px;
+
+    background-color: $team-backgroundcolor;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+  }
+
+  &-li:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .antenna::before {
@@ -36,21 +44,6 @@
   background-image: url("../img/SVG/astronaut.svg");
 }
 
-.our-description-li:not(:last-child) {
-  margin-right: 30px;
-}
-
-.our-description p {
-  margin: 0;
-}
-
-.description-item {
-  display: flex;
-  width: 1170px;
-
-  list-style: none;
-}
-
 .third-title {
   margin-bottom: 10px;
 
@@ -67,6 +60,13 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $descrip-text-color;
+
+  &-item {
+    display: flex;
+    width: 1170px;
+
+    list-style: none;
+  }
 }
 
 .img {
@@ -76,27 +76,27 @@
   margin-bottom: 0px;
   padding: 0px;
   list-style: none;
-}
 
-.img-item {
-  margin: 0 10px;
-  flex-basis: calc(100% / 3 - 30px);
+  &-item {
+    margin: 0 10px;
+    flex-basis: calc(100% / 3 - 30px);
+  }
 }
 
 .overlay-img {
   position: relative;
-}
 
-.overlay-img::before {
-  position: absolute;
-  content: "";
+  &::before {
+    position: absolute;
+    content: "";
 
-  background-color: $hero-backgroundcolor;
-  opacity: 0.8;
-  width: 100%;
-  height: 70px;
-  bottom: 0;
-  left: 0;
+    background-color: $hero-backgroundcolor;
+    opacity: 0.8;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    left: 0;
+  }
 }
 
 .overlay {
@@ -106,21 +106,21 @@
   left: 0;
   width: 100%;
   height: 100%;
-}
 
-.overlay-text {
-  position: absolute;
-  bottom: 25px;
-  left: 86px;
+  &-text {
+    position: absolute;
+    bottom: 25px;
+    left: 86px;
 
-  font-weight: 700;
-  text-transform: uppercase;
-  color: $sec-text-color;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.03em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $sec-text-color;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
 
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 }

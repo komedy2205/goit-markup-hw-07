@@ -1,14 +1,19 @@
-.header .container {
-  display: flex;
-  align-items: center;
-}
-
 .container {
   width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+
+  .header & {
+    display: flex;
+    align-items: center;
+  }
+
+  & > nav {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .webstudio {
@@ -33,11 +38,6 @@ header {
   font-size: 14px;
   line-height: 16px;
   border-bottom: 1px solid $header-border-bottom;
-}
-
-.container > nav {
-  display: flex;
-  align-items: center;
 }
 
 .nav-links {
@@ -98,13 +98,6 @@ header {
   opacity: 1;
 }
 
-.mail-links {
-  margin-left: auto;
-
-  display: block;
-  display: flex;
-}
-
 .link-studio,
 .link-portfolio,
 .link-contacts {
@@ -155,13 +148,13 @@ header {
   transition-property: opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.active:hover,
-.active:focus {
-  color: $sec-backgroundcolor;
+  &:hover,
+  &:focus {
+    color: $sec-backgroundcolor;
 
-  opacity: 1;
+    opacity: 1;
+  }
 }
 
 .mail {
@@ -178,19 +171,26 @@ header {
   transition-property: color fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.mail:hover,
-.mail:focus {
-  color: $sec-backgroundcolor;
-}
+  &:hover,
+  &:focus {
+    color: $sec-backgroundcolor;
+  }
 
-.mail-icon {
-  margin-right: 10px;
+  &-icon {
+    margin-right: 10px;
 
-  align-items: center;
+    align-items: center;
 
-  fill: currentColor;
+    fill: currentColor;
+  }
+
+  &-links {
+    margin-left: auto;
+
+    display: block;
+    display: flex;
+  }
 }
 
 .telephone {
@@ -205,9 +205,9 @@ header {
   transition-property: color fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.telephone:hover,
-.telephone:focus {
-  color: $sec-backgroundcolor;
+  &:hover,
+  &:focus {
+    color: $sec-backgroundcolor;
+  }
 }
